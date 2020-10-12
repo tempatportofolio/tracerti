@@ -75,6 +75,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="konfigurasi-web.php" class="nav-link">
+              <i class="nav-icon fas fa-cog"></i>
+              <p>
+                Konfigurasi Website
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="user-setting.php" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
@@ -110,7 +118,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Pengaturan User</h1>
+            <h1>Edit User</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -129,12 +137,12 @@
         <div class="card card-outline card-success">
             <div class="card-header">
                 <h3 class="card-title">
-                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-edit"></i>
                     Form Edit User
                 </h3>
             </div>
           <div class="card-body">
-            <form role="form" id="quickForm">
+            <form action="" method="" role="form" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
                       <a class="btn bg-yellow" href="user-setting.php">

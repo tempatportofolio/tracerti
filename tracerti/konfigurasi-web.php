@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tambah User | Tracer Study</title>
+  <title>Konfigurasi Website | Tracer Study</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -118,13 +118,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tambah User</h1>
+            <h1>Konfigurasi Website</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item"><a href="user-setting.php">User Setting</a></li>
-              <li class="breadcrumb-item active">Tambah User</li>
+              <li class="breadcrumb-item active">Konfigurasi Website</li>
             </ol>
           </div>
         </div>
@@ -137,56 +136,61 @@
         <div class="card card-outline card-success">
             <div class="card-header">
                 <h3 class="card-title">
-                    <i class="fas fa-plus"></i>
-                    Form Tambah User
+                    <i class="fas fa-cog"></i>
+                    Form Konfigurasi Website
                 </h3>
             </div>
           <div class="card-body">
-            <form action="" method="" role="form" id="quickForm">
+            <form action="" role="form" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                      <a class="btn btn-warning" href="user-setting.php">
-                      <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
-                        Back
-                      </a>
-                  </div>
-                  <br>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Nama</label>
-                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                    <label for="exampleInputEmail1">Nama Situs</label>
+                    <input type="text" name="site_name" class="form-control" id="exampleInputEmail1" value="Tracer Study Teknologi Informasi Vokasi UB Malang" placeholder="">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" name="email_user" class="form-control" id="exampleInputEmail1" placeholder="">
+                    <label for="exampleInputEmail1">Alamat/Situs Pengelola</label>
+                    <input type="text" name="address" class="form-control" id="exampleInputEmail1" placeholder="" value="Jl. Veteran Malang">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Username</label>
-                    <input type="text" name="uname" class="form-control" id="exampleInputPassword1" placeholder="">
+                    <label for="exampleInputEmail1">Telp.</label>
+                    <input type="text" name="phone" value="0341 - " class="form-control" id="exampleInputEmail1" placeholder="">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputPassword1" placeholder="" value="-">
                   </div>
                   <div class="form-group">
-                      <label for="level">Level</label>
-                      <select class="form-control" name="level" id="level">
-                        <option value="admin">Admin</option>
-                        <option value="superadmin">Superadmin</option>
-                      </select>
+                    <label for="exampleInputPassword1">Alamat Situs</label>
+                    <input type="text" name="sites_address" class="form-control" id="exampleInputPassword1" placeholder="" value="-">
                   </div>
-                  <div style="margin-top: 30px;" class="form-group float-right">
-                    <button type="submit" class="btn btn-success">
-                        <i class="fas fa-plus"></i>
-                        Tambah
-                    </button>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Judul Situs</label>
+                    <input type="text" name="sites_nama2" class="form-control" id="exampleInputPassword1" placeholder="" value="Tracer Study TI Vokasi UB">
                   </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Keyword</label>
+                    <textarea name="keyword" id="exampleInputPassword1" class="form-control" cols="30" rows="8"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deskripsi Situs</label>
+                    <textarea name="site_desc" id="exampleInputPassword1" class="form-control" cols="30" rows="8"></textarea>
+                  </div>
+                    <div style="margin-top: 40px;" class="form-group">
+                      <button type="submit" class="btn btn-success">
+                          <i style="margin-right:5px;" class="fas fa-save"></i>
+                          Simpan
+                      </button>
+                    </div>
             </form>
-          </div>                 
-        </div>
+        </div>  
+                       
+            </div>
         <!-- /.card -->
       </div>
     </section>
+    <!-- /.content -->
   </div>
+  <!-- /.content-wrapper -->
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
@@ -195,6 +199,12 @@
     <strong>Copyright &copy; 2020 <a href="https://vokasi.ub.ac.id/">VOKASI UB</a>.</strong> All rights
     reserved.
   </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 

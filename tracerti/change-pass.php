@@ -75,6 +75,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="konfigurasi-web.php" class="nav-link">
+              <i class="nav-icon fas fa-cog"></i>
+              <p>
+                Konfigurasi Website
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="user-setting.php" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>

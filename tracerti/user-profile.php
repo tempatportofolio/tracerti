@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 </head>
 <body class="hold-transition sidebar-mini accent-olive">
 <!-- Site wrapper -->
@@ -75,6 +77,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="konfigurasi-web.php" class="nav-link">
+              <i class="nav-icon fas fa-cog"></i>
+              <p>
+                Konfigurasi Website
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="user-setting.php" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
@@ -126,91 +136,130 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3">
-
-            <!-- Profile Image -->
-            <div class="card card-success card-outline">
-              <div class="card-body box-profile">
-                <div class="text-center">
-                  <img class="profile-user-img img-fluid img-circle"
-                       src="assets/dist/img/avatar3.png"
-                       alt="User profile picture">
-                </div>
-
-                <h3 class="profile-username text-center">Nina Mcintire</h3>
-
-                <p class="text-muted text-center">Software Engineer</p>
-
-                <ul class="list-group list-group-unbordered mb-3">
-                  <li class="list-group-item">
-                    <b>Tahun Lulus</b> <a class="float-right">2019</a>
-                  </li>
-                </ul>
-
-                <a href="#" class="btn btn-success btn-block"><b>-</b></a>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
-            <!-- About Me Box -->
-            <div class="card card-success">
+          <div class="col-12">
+            <div class="card card-outline card-success">
               <div class="card-header">
-                <h3 class="card-title">About Me</h3>
+                <h3 class="card-title">
+                <i class="nav-icon fas fa-users"></i>
+                  Daftar Tracer Study
+                </h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <strong><i class="fas fa-book mr-1"></i> Education</strong>
+                  <div class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                        <div class="dataTables_length">
+                          <label for="">
+                            Show &nbsp; 
+                            <select name="example1_length" class="custom-select custom-select-sm form-control form-control-sm" id="">
+                              <option value="10">10</option>
+                              <option value="25">25</option>
+                              <option value="50">50</option>
+                              <option value="100">100</option>
+                            </select>
+                             &nbsp; entries
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                        <div class="dataTables_filter">
+                          <label for="">
+                            Search : &nbsp; 
+                            <input type="search" name="" placeholder="Nama/Tahun Lulus" class="form-control form-control-sm" id="">
+                            <button style="margin-bottom:3px;" class="btn btn-sm btn-success form-contol" type="submit">
+                              <i class="fas fa-search"></i>
+                              Search
+                            </button>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" role="grid" aria-describedby="example1_info">
+                          <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th>NIM</th>
+                              <th>Nama</th>
+                              <th>Program Studi</th>
+                              <th>Telp.</th>
+                              <th>Email</th>
+                              <th>Tahun Lulus</th>
+                              <th style="text-align: center;vertical-align: middle;">Aksi</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>129871239713</td>
+                              <td>Mahasiswa 1</td>
+                              <td>Teknologi Informasi dan Komputer</td>
+                              <td>08123172317</td>
+                              <td>Mahasiswa1@gmail.com</td>
+                              <td>2016</td>
+                              <td style="text-align: center;vertical-align: middle;">
+                                <a href="detail-profile.php" class="btn btn-success">
+                                  <i class="fas fa-info-circle"></i>
+                                  Detail
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>134234323</td>
+                              <td>Mahasiswa 2</td>
+                              <td>Teknologi Informasi dan Komputer</td>
+                              <td>081231327</td>
+                              <td>Mahasiswa2@gmail.com</td>
+                              <td>2015</td>
+                              <td style="text-align: center;vertical-align: middle;">
+                                <a href="detail-profile.php"  class="btn btn-success">
+                                  <i class="fas fa-info-circle"></i>
+                                  Detail
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
 
-                <p class="text-muted">
-                  B.S. in Computer Science from the University of Tennessee at Knoxville
-                </p>
-
-                <hr>
-
-                <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-
-                <p class="text-muted">Malibu, California</p>
-
-                <hr>
-
-                <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
-
-                <p class="text-muted">
-                  <span class="tag tag-danger">UI Design</span>
-                  <span class="tag tag-success">Coding</span>
-                  <span class="tag tag-info">Javascript</span>
-                  <span class="tag tag-warning">PHP</span>
-                  <span class="tag tag-primary">Node.js</span>
-                </p>
-
-                <hr>
-
-                <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
-
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+                    <div style="margin-top:30px;" class="row">
+                      <div class="col-sm-12 col-md-5">
+                        <div class="dataTables_info" role="status" id="example1_info">Showing 1 to 25 of 57 entries</div>
+                      </div>
+                      <div class="col-sm-12 col-md-7">
+                        <div class="dataTables_paginate paging_simple_numbers" role="status" id="example1_paginate">
+                          <ul class="pagination">
+                            <li class="paginate_button page-item previous" id="example1_previous">
+                              <a href="#" class="page-link">Previous</a>
+                            </li>
+                            <li class="paginate_button page-item active" id="example1_previous">
+                              <a href="#" class="page-link">1</a>
+                            </li>
+                            <li class="paginate_button page-item" id="example1_previous">
+                              <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="paginate_button page-item" id="example1_previous">
+                              <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="paginate_button page-item" id="example1_previous">
+                              <a href="#" class="page-link">4</a>
+                            </li>
+                            <li class="paginate_button page-item next" id="example1_previous">
+                              <a href="#" class="page-link">Next</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
               <!-- /.card-body -->
             </div>
-            <!-- /.card -->
           </div>
-          <!-- /.col -->
-          <div class="col-md-9">
-            <div class="card card-success card-outline">
-              <div class="card-header p-2">
-                
-              </div><!-- /.card-header -->
-              <div class="card-body">
-                <div class="tab-content">
-                
-                  <!-- /.tab-pane -->
-                </div>
-                <!-- /.tab-content -->
-              </div><!-- /.card-body -->
-            </div>
-            <!-- /.nav-tabs-custom -->
-          </div>
-          <!-- /.col -->
         </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -237,5 +286,27 @@
 <script src="assets/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="assets/dist/js/demo.js"></script>
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
 </body>
 </html>

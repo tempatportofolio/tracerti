@@ -75,6 +75,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="konfigurasi-web.php" class="nav-link">
+              <i class="nav-icon fas fa-cog"></i>
+              <p>
+                Konfigurasi Website
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="user-setting.php" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
@@ -154,7 +162,7 @@
                                             <th>Nama</th>
                                             <th>Email</th>
                                             <th>Level</th>
-                                            <th>Aksi</th>
+                                            <th style="text-align: center;vertical-align: middle;">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -163,7 +171,7 @@
                                             <td>Admin</td>
                                             <td>Admin@gmail.com</td>
                                             <td>Superadmin</td>
-                                            <td>
+                                            <td style="text-align: center;vertical-align: middle;">
                                                 <a href="edit-user.php" class="btn btn-warning">
                                                 <i class="far fa-edit"></i>
                                                     Edit
@@ -179,7 +187,7 @@
                                             <td>Admin2</td>
                                             <td>Admin2@gmail.com</td>
                                             <td>Superadmin</td>
-                                            <td>
+                                            <td style="text-align: center;vertical-align: middle;">
                                                 <a href="edit-user.php" class="btn btn-warning">
                                                 <i class="far fa-edit"></i>
                                                     Edit

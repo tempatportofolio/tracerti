@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tambah User | Tracer Study</title>
+  <title>Detail Profile | Tracer Study</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -118,13 +118,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tambah User</h1>
+            <h1>Detail Data Profile</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item"><a href="user-setting.php">User Setting</a></li>
-              <li class="breadcrumb-item active">Tambah User</li>
+              <li class="breadcrumb-item"><a href="user-profile.php">Profil User</a></li>
+              <li class="breadcrumb-item active">Detail Profile</li>
             </ol>
           </div>
         </div>
@@ -137,49 +137,54 @@
         <div class="card card-outline card-success">
             <div class="card-header">
                 <h3 class="card-title">
-                    <i class="fas fa-plus"></i>
-                    Form Tambah User
+                    <i class="fas fa-info-circle"></i>
+                    Detail Data Profile
                 </h3>
             </div>
           <div class="card-body">
-            <form action="" method="" role="form" id="quickForm">
+            <form role="form" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                      <a class="btn btn-warning" href="user-setting.php">
+                      <a class="btn bg-yellow" href="user-profile.php">
                       <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
                         Back
                       </a>
                   </div>
                   <br>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Nama</label>
-                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" name="email_user" class="form-control" id="exampleInputEmail1" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Username</label>
-                    <input type="text" name="uname" class="form-control" id="exampleInputPassword1" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="">
-                  </div>
-                  <div class="form-group">
-                      <label for="level">Level</label>
-                      <select class="form-control" name="level" id="level">
-                        <option value="admin">Admin</option>
-                        <option value="superadmin">Superadmin</option>
-                      </select>
-                  </div>
-                  <div style="margin-top: 30px;" class="form-group float-right">
-                    <button type="submit" class="btn btn-success">
-                        <i class="fas fa-plus"></i>
-                        Tambah
-                    </button>
-                  </div>
+                  <div class="row">
+                            <div class="col-sm-12">
+                                <table class="table table-bordered table-striped dataTable table-hover" role="grid" aria-describedby="example1_info">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>Soal</th>
+                                            <th>Kode Jawaban</th>
+                                            <th>Jawaban</th>
+                                            <th>Keterangan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Menurut Anda seberapa besar penekanan perkuliahan di laksanakan di program studi Anda?</td>
+                                            <td>f21</td>
+                                            <td>5</td>
+                                            <td>Tidak Sama Sekali</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Menurut Anda seberapa besar penekanan perkuliahan di laksanakan di program studi Anda?</td>
+                                            <td>f21</td>
+                                            <td>5</td>
+                                            <td>Tidak Sama Sekali</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
             </form>
           </div>                 
         </div>
@@ -195,6 +200,12 @@
     <strong>Copyright &copy; 2020 <a href="https://vokasi.ub.ac.id/">VOKASI UB</a>.</strong> All rights
     reserved.
   </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 
