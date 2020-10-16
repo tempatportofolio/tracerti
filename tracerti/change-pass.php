@@ -54,6 +54,7 @@
       </div>
 
       <!-- Sidebar Menu -->
+      
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
@@ -63,6 +64,30 @@
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Home
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="jenis-jawaban.php" class="nav-link">
+              <i class="nav-icon fas fa-check-square"></i>
+              <p>
+                Jenis Jawaban
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="data-combobox.php" class="nav-link">
+              <i class="nav-icon fas fa-list-alt"></i>
+              <p>
+                Data Combobox
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="kategori-soal.php" class="nav-link">
+              <i class="nav-icon fas fa-folder"></i>
+              <p>
+                Kategori Soal
               </p>
             </a>
           </li>
@@ -137,7 +162,7 @@
             <div class="card-header">
                 <h3 class="card-title">
                     <i class="fas fa-edit"></i>
-                    Change Password
+                    Form Pengaturan Password
                 </h3>
             </div>
           <div class="card-body">

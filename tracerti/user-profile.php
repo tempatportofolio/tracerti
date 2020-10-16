@@ -69,6 +69,30 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="jenis-jawaban.php" class="nav-link">
+              <i class="nav-icon fas fa-check-square"></i>
+              <p>
+                Jenis Jawaban
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="data-combobox.php" class="nav-link">
+              <i class="nav-icon fas fa-list-alt"></i>
+              <p>
+                Data Combobox
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="kategori-soal.php" class="nav-link">
+              <i class="nav-icon fas fa-folder"></i>
+              <p>
+                Kategori Soal
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="user-profile.php" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
@@ -200,7 +224,7 @@
                               <td>Mahasiswa1@gmail.com</td>
                               <td>2016</td>
                               <td style="text-align: center;vertical-align: middle;">
-                                <a href="detail-profile.php" class="btn btn-success">
+                                <a href="detail-profile.php" class="btn btn-sm btn-success">
                                   <i class="fas fa-info-circle"></i>
                                   Detail
                                 </a>
@@ -215,7 +239,7 @@
                               <td>Mahasiswa2@gmail.com</td>
                               <td>2015</td>
                               <td style="text-align: center;vertical-align: middle;">
-                                <a href="detail-profile.php"  class="btn btn-success">
+                                <a href="detail-profile.php"  class="btn btn-sm btn-success">
                                   <i class="fas fa-info-circle"></i>
                                   Detail
                                 </a>
