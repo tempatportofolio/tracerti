@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Data Combobox | Tracer Study
+@endsection
+
 @section('content')
     <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
