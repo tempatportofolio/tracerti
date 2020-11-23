@@ -25,6 +25,49 @@ Route::get('/dashboard', function () {
 /* End */
 
 
+/* Jenis-Jawaban */
+Route::get('/jenis-jawaban', function () {
+    return view('layouts.admin.jenis_jawaban');
+});
+Route::get('/tambah-jawaban', function () {
+    return view('layouts.admin.form.jenis_jawaban.tambah_jawaban');
+});
+Route::get('/edit-jawaban', function () {
+    return view('layouts.admin.form.jenis_jawaban.edit_jawaban');
+});
+/* End */
+
+
+/* Data Combobox */
+Route::get('/data-combobox', function () {
+    return view('layouts.admin.combobox');
+});
+Route::get('/detail-combobox', function () {
+    return view('layouts.admin.form.combobox.detail_combobox');
+});
+Route::get('/tambah-combobox', function () {
+    return view('layouts.admin.form.combobox.tambah_combobox');
+});
+Route::get('/edit-combobox', function () {
+    return view('layouts.admin.form.combobox.edit_combobox');
+});
+/* End */
+
+
+/* Kategori Soal */
+Route::get('/kategori-soal', function () {
+    return view('layouts.admin.kategori_soal');
+});
+Route::get('/tambah-kategori', function () {
+    return view('layouts.admin.form.kategori_soal.tambah_kategori');
+});
+Route::get('/edit-kategori', function () {
+    return view('layouts.admin.form.kategori_soal.edit_kategori');
+});
+/* End */
+
+
+
 /* Pengaturan-Password */
 Route::get('/pengaturan-password', function () {
     return view('layouts.admin.pengaturan_password');
@@ -36,11 +79,9 @@ Route::get('/pengaturan-password', function () {
 Route::get('/pengaturan-user', function () {
     return view('layouts.admin.pengaturan_user');
 });
-
 Route::get('/tambah-user', function () {
     return view('layouts.admin.form.pengaturan_user.tambah_user');
 });
-
 Route::get('/edit-user', function () {
     return view('layouts.admin.form.pengaturan_user.edit_user');
 });
@@ -58,23 +99,10 @@ Route::get('/konfigurasi-website', function () {
 Route::get('/profil-user', function () {
     return view('layouts.admin.profil_user');
 });
-
 Route::get('/detail-profil', function () {
     return view('layouts.admin.form.profil_user.detail_profil');
 });
 /* End */
 
 
-/* Jenis-Jawaban */
-Route::get('/jenis-jawaban', function () {
-    return view('layouts.admin.jenis_jawaban');
-});
 
-Route::get('/tambah-jawaban', function () {
-    return view('layouts.admin.form.jenis_jawaban.tambah_jawaban');
-});
-
-Route::get('/edit-jawaban', function () {
-    return view('layouts.admin.form.jenis_jawaban.edit_jawaban');
-});
-/* End */

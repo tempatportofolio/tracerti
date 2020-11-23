@@ -69,9 +69,9 @@
                                                 <i class="far fa-edit"></i>
                                                     Edit
                                                 </a>
-                                                <a href="delete-user.php" class="btn btn-sm btn-danger">
+                                                <a href="/hapus-user" class="btn btn-sm btn-danger">
                                                 <i class="far fa-trash-alt"></i>
-                                                    Delete
+                                                    Hapus
                                                 </a>
                                             </td>
                                         </tr>
@@ -85,9 +85,9 @@
                                                 <i class="far fa-edit"></i>
                                                     Edit
                                                 </a>
-                                                <a href="delete_user.php" class="btn btn-sm btn-danger">
+                                                <a href="/hapus_user" class="btn btn-sm btn-danger">
                                                 <i class="far fa-trash-alt"></i>
-                                                    Delete
+                                                    Hapus
                                                 </a>
                                             </td>
                                         </tr>
