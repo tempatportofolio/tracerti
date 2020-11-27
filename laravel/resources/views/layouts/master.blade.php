@@ -9,7 +9,8 @@
 
   <!-- MyCSS -->
 <link rel="stylesheet" href="{{asset('admin/assets/css/style.css')}}">
-
+{{-- <!-- Tab Logo -->
+<link rel="icon" href="{{asset('admin/assets/dist/img/vokasilogo.png')}}"> --}}
   <!-- Datatable -->
 @yield('datatablecss')
   <!-- Font Awesome -->
@@ -53,19 +54,19 @@
 <script src="{{asset('admin/assets/dist/js/demo.js')}}"></script>
 
 @yield('datatablejs')
+@yield('ckeditor')
 
 <script>
     var url = window.location;
+    // for sidebar menu entirely but not cover treeview
+    $('ul.nav-sidebar a').filter(function() {
+        return this.href == url;
+    }).addClass('active-1');
 
-// for sidebar menu entirely but not cover treeview
-$('ul.nav-sidebar a').filter(function() {
-    return this.href == url;
-}).addClass('active-1');
-
-// for treeview
-$('ul.nav-treeview a').filter(function() {
-    return this.href == url;
-}).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active-1');
+    // for treeview
+    $('ul.nav-treeview a').filter(function() {
+        return this.href == url;
+    }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active-1');
 </script>
 </body>
 </html>

@@ -68,6 +68,33 @@ Route::get('/edit-kategori', function () {
 
 
 
+/* Petunjuk */
+Route::get('/petunjuk', function () {
+    return view('layouts.admin.petunjuk');
+});
+Route::get('/edit-petunjuk', function () {
+    return view('layouts.admin.form.petunjuk.edit_petunjuk');
+});
+/* End */
+
+
+/* Bank Soal */
+Route::get('/bank-soal', function () {
+    return view('layouts.admin.bank_soal');
+});
+Route::get('/detail-soal', function () {
+    return view('layouts.admin.form.bank_soal.detail_soal');
+});
+Route::get('/tambah-soal', function () {
+    return view('layouts.admin.form.bank_soal.tambah_soal');
+});
+Route::get('/edit-soal', function () {
+    return view('layouts.admin.form.bank_soal.edit_soal');
+});
+/* End */
+
+
+
 /* Pengaturan-Password */
 Route::get('/pengaturan-password', function () {
     return view('layouts.admin.pengaturan_password');

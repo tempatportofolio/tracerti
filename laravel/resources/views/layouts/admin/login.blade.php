@@ -6,7 +6,7 @@
     <title>Tracer Study D3 Teknlogi Informasi Vokasi UB</title>
     <link rel="stylesheet" href="{{asset('admin/assets/css/style.css')}}">
 </head>
-<body>
+<body class="bg-mybody">
 
     <div class="greet">
         <h1>Selamat datang di Halaman Admnistrator Tracer Study</h1>

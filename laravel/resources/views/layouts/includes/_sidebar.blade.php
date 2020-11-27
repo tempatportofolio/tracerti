@@ -57,14 +57,22 @@
               </p>
             </a>
           </li>
-          {{-- <li class="nav-item">
+          <li class="nav-item">
+            <a href="/petunjuk" class="nav-link">
+              <i class="nav-icon fas fa-info-circle"></i>
+              <p>
+                Petunjuk
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="/bank-soal" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
                 Soal
               </p>
             </a>
-          </li> --}}
+          </li>
           <li class="nav-item">
             <a href="/profil-user" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
