@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="chartContainer" style="height: 600px; width: 100%;"></div>
+    
+    
+
+
+
+
+    
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            title:{
+                text: "Penekanan Pelaksanaan perkuliahan",
+                fontSize: 50,      
+            },
+
+            axisY:{
+            maximum: 80,
+            interval: 5,
+            },
+
+            axisX:{
+                labelFontColor: "#2e5594"
+            },
+
+            data: [              
+            {
+                // Change type to "doughnut", "line", "splineArea", etc.
+                type: "bar",
+                indexLabel: "{y}",
+                indexLabelPlacement: "outside",  
+                indexLabelOrientation: "horizontal",
+                dataPoints: [
+                    { label: "Sangat Besar",  y: 36  },
+                    { label: "Besar", y: 72  },
+                    { label: "Cukup Besar", y: 53  },
+                    { label: "Kurang",  y: 15  },
+                    { label: "Tidak Sama Sekali",  y: 2  }
+                ]
+            }
+            ]
+        });
+        chart.render();
+    }
+    </script>
+</body>
+</html>

@@ -74,6 +74,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="/grafik" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Grafik
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="/profil-user" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>

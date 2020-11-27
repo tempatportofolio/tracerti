@@ -95,6 +95,20 @@ Route::get('/edit-soal', function () {
 
 
 
+/* Grafik */
+Route::get('/grafik', function () {
+    return view('layouts.admin.grafik');
+});
+Route::get('/detail-grafik', function () {
+    return view('layouts.admin.form.grafik.detail_grafik');
+});
+Route::get('/tambah-grafik', function () {
+    return view('layouts.admin.form.grafik.tambah_grafik');
+});
+/* End */
+
+
+
 /* Pengaturan-Password */
 Route::get('/pengaturan-password', function () {
     return view('layouts.admin.pengaturan_password');

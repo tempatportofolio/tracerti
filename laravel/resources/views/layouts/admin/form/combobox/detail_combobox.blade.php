@@ -39,7 +39,7 @@
                     <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
                         <div class="row">
                             <div class="form-group" style="margin-left:7px;">
-                              <a class="btn bg-yellow" style="height:35px;" href="/data-combobox">
+                              <a class="btn bg-yellow" href="/data-combobox">
                               <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
                                 Back
                               </a>

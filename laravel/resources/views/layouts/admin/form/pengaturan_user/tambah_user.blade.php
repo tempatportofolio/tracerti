@@ -38,7 +38,7 @@
             <form action="" method="" role="form" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                    <a class="btn bg-yellow" style="height:35px;" href="/pengaturan-user">
+                    <a class="btn bg-yellow" href="/pengaturan-user">
                     <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
                       Back
                     </a>
