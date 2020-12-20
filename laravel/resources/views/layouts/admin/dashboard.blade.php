@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+<!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
         <div class="row mb-2">
@@ -20,10 +20,10 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-        <div class="card bg-success card-success">
+        <div class="card home bg-success card-success">
             <!-- /.card-header -->
             <div class="card-body">
-            <h3>Selamat Datang Di Sistem Tracer Study D3 Teknologi Informasi Vokasi UB Malang</h3>
+            <h5>Selamat Datang Di Sistem Tracer Study D3 Teknologi Informasi Vokasi UB Malang</h5>
             <p>Saat ini Anda Sedang Berada di Halaman Beranda</p>
             </div>
         </div>

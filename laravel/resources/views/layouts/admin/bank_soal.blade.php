@@ -46,7 +46,7 @@
                   <div class="dataTables_wrapper dt-bootstrap4">
                   <div class="row">
                       <div class="col">
-                            <a href="/tambah-soal" class="btn btn-success float-right">
+                            <a href="/tambah-soal" class="btn med btn-success float-right">
                                 <i class="fas fa-plus"></i>
                                 Tambah Soal
                             </a>
@@ -125,10 +125,22 @@
                     <div style="margin-top:30px; margin-right:2px;" class="row float-right">
                         <div class="dataTables_paginate paging_simple_numbers float-right" role="status" id="example1_paginate">
                           <ul class="pagination">
-                           
                           </ul>
-                      </div>
+                        </div>
                     </div>
+
+                    <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Soal berisi kumpulan soal-soal tracer study</li>
+                              <li>Untuk menambahkan jawaban pada soal klik icon detail soal</li>
+                            </ul>
+                        </div>
                   </div>
               </div>
               <!-- /.card-body -->

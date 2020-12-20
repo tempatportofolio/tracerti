@@ -94,6 +94,20 @@ Route::get('/edit-soal', function () {
 /* End */
 
 
+/* Import Data */
+Route::get('/import-data-tracer', function () {
+    return view('layouts.admin.import');
+});
+/* End */
+
+
+/* Export Data */
+Route::get('/export-data-tracer', function () {
+    return view('layouts.admin.export');
+});
+/* End */
+
+
 
 /* Grafik */
 Route::get('/grafik', function () {

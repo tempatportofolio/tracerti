@@ -39,7 +39,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="dataTables_wrapper dt-bootstrap4">
-                                    <a href="/tambah-kategori" class="btn btn-success float-right">
+                                    <a href="/tambah-kategori" class="btn med btn-success float-right">
                                     <i class="fas fa-plus"></i>
                                         Tambah Kategori Soal
                                     </a>
@@ -101,6 +101,19 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Kategori Soal merupakan data kategori soal</li>
+                              <li>Data kategori soal harus ditambahkan sebelum membuat soal</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

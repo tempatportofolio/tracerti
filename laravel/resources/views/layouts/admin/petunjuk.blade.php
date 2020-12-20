@@ -97,6 +97,19 @@
                                 </table>
                             </div>
                         </div>
+
+                        <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Petunjuk hanya bisa diedit dan tidak bisa ditambah dan dihapus</li>
+                              <li>Petunjuk akan tampil di halaman user sebelum mengisi data tracer study</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

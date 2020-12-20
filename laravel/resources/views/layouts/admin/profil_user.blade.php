@@ -109,6 +109,19 @@
                           </ul>
                       </div>
                     </div>
+
+                    <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Digunakan untuk melihat data tracer study mahasiswa</li>
+                              <li>Untuk melhat detail per no mahasiswa di aksi detail</li>
+                            </ul>
+                        </div>
                   </div>
               </div>
               <!-- /.card-body -->

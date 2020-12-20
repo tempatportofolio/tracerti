@@ -61,7 +61,7 @@
                         <br>
                         <div class="row">
                             <div class="col-sm-12">
-                                    <a href="/tambah-grafik" class="btn btn-success float-right">
+                                    <a href="/tambah-grafik" class="btn med btn-success float-right">
                                     <i class="fas fa-plus"></i>
                                         Tambah Grafik
                                     </a>
@@ -135,6 +135,20 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Grafik berisi kumpulan grafik tracer study</li>
+                              <li>Untuk melihat grafik klik icon detail</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>

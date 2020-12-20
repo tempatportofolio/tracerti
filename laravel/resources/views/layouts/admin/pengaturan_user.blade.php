@@ -38,7 +38,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="dataTables_wrapper dt-bootstrap4">
-                                    <a href="/tambah-user" class="btn btn-success float-right">
+                                    <a href="/tambah-user" class="btn med btn-success float-right">
                                     <i class="fas fa-plus"></i>
                                         Tambah User
                                     </a>
@@ -106,6 +106,19 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Hanya bisa diakses oleh Superadmin</li>
+                              <li>Untuk mengatur user baik admin maupun penguji</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -34,8 +34,11 @@
                 </h3>
             </div>
           <div class="card-body">
-            <form role="form" id="quickForm">
-                <div class="card-body">
+            <fieldset class="fieldset-border">
+              <legend class="legend-border">
+                Silahkan mengubah password anda melalui form dibawah ini
+              </legend>
+              <form role="form" id="quickForm">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Password Lama</label>
                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Password lama">
@@ -48,13 +51,14 @@
                     <label for="exampleInputPassword2">Konfirmasi Password</label>
                     <input type="password" name="password2" class="form-control" id="exampleInputPassword2" placeholder="Konfirmasi password">
                   </div>
-                    <div style="margin-top: 40px;" class="form-group">
-                      <button type="submit" class="btn btn-success">
-                          <i style="margin-right:5px;" class="fas fa-save"></i>
-                          Simpan
-                      </button>
-                    </div>
-            </form>
+                  <div style="margin-top: 40px;" class="form-group">
+                    <button type="submit" class="btn btn-success">
+                      <i style="margin-right:5px;" class="fas fa-save"></i>
+                      Simpan
+                    </button>
+                  </div>
+                </form>
+              </fieldset>
         </div>  
                        
             </div>

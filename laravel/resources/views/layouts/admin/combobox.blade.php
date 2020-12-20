@@ -39,7 +39,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="dataTables_wrapper dt-bootstrap4">
-                                    <a href="/tambah-combobox" class="btn btn-success float-right">
+                                    <a href="/tambah-combobox" class="btn med btn-success float-right">
                                     <i class="fas fa-plus"></i>
                                         Tambah Data Combobox
                                     </a>
@@ -110,6 +110,21 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Data Combobox merupakan data-data yang ditampilkan dalam soal dalam bentuk combobox</li>
+                              <li>Data combobox harus ditambahkan sebelum membuat soal</li>
+                              <li>Untuk menambah data list di combobox klik di icon detail</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>

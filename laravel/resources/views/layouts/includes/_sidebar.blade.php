@@ -74,6 +74,22 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="/import-data-tracer" class="nav-link">
+              <i class="nav-icon fas fa-upload"></i>
+              <p>
+                Import Data Tracer Study
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/export-data-tracer" class="nav-link">
+              <i class="nav-icon fas fa-download"></i>
+              <p>
+                Export Data Tracer Study
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="/grafik" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
