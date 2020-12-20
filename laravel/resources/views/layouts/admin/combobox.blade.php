@@ -54,7 +54,7 @@
                                         <tr>
                                             <th>No.</th>
                                             <th>Nama</th>
-                                            <th style="text-align: center;vertical-align: middle;">Aksi</th>
+                                            <th width="30%" style="text-align: center;vertical-align: middle;">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>

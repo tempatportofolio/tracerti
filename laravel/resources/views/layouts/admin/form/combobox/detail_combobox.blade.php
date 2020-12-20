@@ -59,7 +59,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="dataTables_wrapper dt-bootstrap4">
-                                    <button type="button" class="btn btn-success float-right" data-toggle="modal" data-target="#modal-success">
+                                    <button type="button" class="btn med btn-success float-right" data-toggle="modal" data-target="#modal-success">
                                       <i class="fas fa-plus"></i>
                                       Tambah Nilai Combobox
                                     </button>
@@ -125,6 +125,20 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Untuk menambah nilai combobox klik tombol tambah jawaban</li>
+                              <li>Untuk mengedit dan menghapus nilai combobox dapat dilakukan di masing-masing nilai</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>

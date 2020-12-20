@@ -36,27 +36,40 @@
                     </h1>
                 </div>
                 <div class="card-body">
+                    <div class="form-group">
+                      <a class="btn med bg-yellow" href="/kategori-soal">
+                      <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
+                        Back
+                      </a>
+                    </div>
                     <form action="" method="" role="form" id="quickForm">
-                        <div class="card-body">
-                            <div class="form-group">
-                              <a class="btn bg-yellow" href="/kategori-soal">
-                              <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
-                                Back
-                              </a>
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Nama Kategori</label>
-                                <input type="text" name="nama_kat" class="form-control" id="exampleInputEmail1" placeholder="Contoh : Identitas">
-                            </div>
-                            <div style="margin-top: 30px;" class="form-group float-right">
-                                <button type="submit" class="btn btn-success">
-                                    <i style="margin-right:5px;" class="fas fa-save"></i>
-                                    Simpan
-                                </button>
-                            </div>
-                        </div>    
-                    </form>
+                        <fieldset class="fieldset-border">
+                          <legend class="legend-border">Silahkan menambah kategori soal pada form dibawah ini.</legend>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Nama Kategori</label>
+                            <input type="text" name="nama_kat" class="form-control" id="exampleInputEmail1" placeholder="Contoh : Identitas">
+                          </div>
+                          <div class="mt-1 form-group float-right">
+                            <button type="submit" class="btn med btn-success">
+                              <i style="margin-right:5px;" class="fas fa-save"></i>
+                              Simpan
+                            </button>
+                          </div>    
+                        </form>
+                      </fieldset>
+
+                      <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Kategori Soal merupakan data kategori soal</li>
+                              <li>Data kategori soal harus ditambahkan sebelum membuat soal</li>
+                            </ul>
+                        </div>
                 </div>
             </div>
         </div>

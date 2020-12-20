@@ -35,27 +35,41 @@
                     </h1>
                 </div>
                 <div class="card-body">
-                    <form action="" method="" role="form" id="quickForm">
-                        <div class="card-body">
-                            <div class="form-group">
-                              <a class="btn bg-yellow" href="/jenis-jawaban">
-                              <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
-                                Back
-                              </a>
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Jenis Jawaban</label>
-                                <input type="text" name="text" class="form-control" id="exampleInputEmail1" value="Text" placeholder="">
-                            </div>
-                            <div style="margin-top: 30px;" class="form-group float-right">
-                                <button type="submit" class="btn btn-success">
-                                    <i style="margin-right:5px;" class="fas fa-save"></i>
-                                    Simpan
-                                </button>
-                            </div>
-                        </div>    
-                    </form>
+                    <div class="form-group">
+                      <a class="btn med bg-yellow" href="/jenis-jawaban">
+                      <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
+                        Back
+                      </a>
+                    </div>
+                    <fieldset class="fieldset-border">
+                      <legend class="legend-border">Silahkan mengubah data jenis jawaban pada form dibawah ini.</legend>
+                      <form action="" method="" role="form" id="quickForm">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Jenis Jawaban</label>
+                          <input type="text" name="text" class="form-control" id="exampleInputEmail1" value="Text" placeholder="">
+                        </div>
+                        <div class="mt-1 form-group float-right">
+                          <button type="submit" class="btn med btn-success">
+                            <i style="margin-right:5px;" class="fas fa-save"></i>
+                            Simpan
+                          </button>
+                        </div>
+                      </form>
+                    </fieldset>
+
+                    <hr>
+
+                    <div class="card catatan bg-success">
+                        <h3>
+                            <i class="fas fa-info-circle"></i>
+                            Catatan :
+                        </h3>
+                        <ul>
+                          <li>Jenis jawawaban merupakan data jenis jawaban untuk masing-masing soal</li>
+                        <li>Data jenis jawaban harus ditambahkan sebelum membuat soal</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>

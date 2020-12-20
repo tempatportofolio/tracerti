@@ -35,53 +35,66 @@
                     Form Tambah Soal
                 </h3>
             </div>
-          <div class="card-body">
-                <div class="card-body">
-                  <div class="form-group">
-                      <a class="btn bg-yellow" href="/bank-soal">
-                      <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
-                        Back
-                      </a>
-                  </div>
-                  <br>
+            <div class="card-body">
+              <div class="form-group">
+                  <a class="btn med bg-yellow" href="/bank-soal">
+                  <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
+                    Back
+                  </a>
+              </div>
                 <div class="row">
                     <div class="col-sm-12">
-                       <form action="" method="get">
-                            <div class="form-group">
-                                <label for="">Kategori Kelas</label>
-                                <Select name="kategori" class="form-control">
-                                    <option value="">Identitas</option>
-                                    <option value="">Mode Pembelajaran</option>
-                                </Select>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Kode Soal</label>
-                                <input class="form-control col-sm-2" type="text" placeholder="Contoh : f2" name="kode_soal" id="">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Soal</label>
-                                <textarea class="form-control" name="soal" id="" cols="30" rows="10"></textarea>
-                            </div>
+                      <fieldset class="fieldset-border">
+                        <legend class="legend-border">Silahkan menambah soal pada form dibawah ini.</legend>
+                        <form action="" method="get">
+                          <div class="form-group">
+                            <label for="">Kategori Kelas</label>
+                            <Select name="kategori" class="form-control">
+                              <option value="">Identitas</option>
+                              <option value="">Mode Pembelajaran</option>
+                            </Select>
+                          </div>
+                          <div class="form-group">
+                            <label for="">Kode Soal</label>
+                            <input class="form-control col-sm-2" type="text" placeholder="Contoh : f2" name="kode_soal" id="">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Soal</label>
+                            <textarea class="form-control" name="soal" id="" cols="30" rows="10"></textarea>
+                          </div>
                             <div class="form-group">
                                 <label for="">No. Urut</label>
                                 <input class="form-control col-sm-2" placeholder="Contoh : 1" type="text" name="no_urut" id="">
-                            </div>
-                            <div class="form-group">
+                              </div>
+                              <div class="form-group">
                                 <label for="">Status</label>
                                 <select class="form-control" name="status" id="">
-                                    <option value="">Aktif</option>
+                                  <option value="">Aktif</option>
                                     <option value="">Tidak Aktif</option>
-                                </select>
-                            </div>
-                            <div class="form-group" style="margin-top:30px;">
-                                <button type="submit" class="btn btn-md btn-success float-right">
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <button type="submit" class="mt-1 btn med btn-success float-right">
                                     <i class="fas fa-plus"></i>
                                     Tambah
-                                </button>
-                            </div>
-                       </form> 
-                    </div>
+                                  </button>
+                                </div>
+                              </form> 
+                            </fieldset>
+                      </div>
                 </div>
+                <hr>
+
+                        <div class="card catatan bg-success">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Catatan :
+                            </h3>
+                            <ul>
+                              <li>Soal berisi kumpulan soal-soal tracer study</li>
+                              <li>Untuk menambahkan jawaban pada soal klik icon detail soal</li>
+                            </ul>
+                        </div>
           </div>                 
         </div>
         <!-- /.card -->

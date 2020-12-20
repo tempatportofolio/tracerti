@@ -35,39 +35,40 @@
                 </h3>
             </div>
           <div class="card-body">
-            <form action="" method="" role="form" id="quickForm">
-                <div class="card-body">
-                  <div class="form-group">
-                    <a class="btn bg-yellow" href="/pengaturan-user">
-                    <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
-                      Back
-                    </a>
-                  </div>
-                  <br>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Nama</label>
-                    <input type="text" name="nama_user" value="Admin" class="form-control" id="exampleInputEmail1" placeholder="">
-                  </div>
+            <div class="form-group">
+              <a class="btn med bg-yellow" href="/pengaturan-user">
+              <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
+                Back
+              </a>
+            </div>
+            <fieldset class="fieldset-border">
+              <legend class="legend-border">Silahkan mengubah data user pada form dibawah ini.</legend>
+              <form action="" method="" role="form" id="quickForm"> 
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nama</label>
+                  <input type="text" name="nama_user" value="Admin" class="form-control" id="exampleInputEmail1" placeholder="">
+                </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
                     <input type="email" name="email_user" value="admin@gmail.com" class="form-control" id="exampleInputEmail1" placeholder="">
                   </div>
                   <div class="form-group">
-                      <label for="level">Level</label>
-                      <select class="form-control" name="level" id="level">
-                        <option value="admin">Admin</option>
-                        <option value="superadmin">Superadmin</option>
-                      </select>
+                    <label for="level">Level</label>
+                    <select class="form-control" name="level" id="level">
+                      <option value="admin">Admin</option>
+                      <option value="superadmin">Superadmin</option>
+                    </select>
                   </div>
-                  <div style="margin-top: 30px;" class="form-group float-right">
-                    <button type="submit" class="btn btn-success">
-                        <i style="margin-right:5px;" class="fas fa-save"></i>
-                        Simpan
+                  <div class="form-group float-right">
+                    <button type="submit" class="btn mt-1 med btn-success">
+                      <i style="margin-right:5px;" class="fas fa-save"></i>
+                      Simpan
                     </button>
                   </div>
-            </form>
-          </div>                 
-        </div>
+                </form>
+              </fieldset>
+              </div>                 
+            </div>
         <!-- /.card -->
       </div>
     </section>

@@ -39,13 +39,13 @@
                     <form action="" method="" role="form" id="quickForm">
                         <div class="card-body">
                             <div class="form-group">
-                              <a class="btn bg-yellow" href="/grafik">
+                              <a class="btn med bg-yellow" href="/grafik">
                               <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
                                 Back
                               </a>
                             </div>
                             <br>
-                            <h4 class="font-weight-bold">(f2) Menurut Nada seberapa besar penekanan perkuliahan pada program studi anda?</h4>
+                            <h5 class="font-weight-bold">(f2) Menurut Anda seberapa besar penekanan perkuliahan pada program studi anda?</h5>
                             <p class="font-weight-bold">(0) Responden</p>
                             <div class="chart-bdy">
                                 <div id="chartContainer" style="height: 600px; width: 100%;"></div> 

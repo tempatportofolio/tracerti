@@ -37,30 +37,31 @@
             </div>
           <div class="card-body">
             <div class="form-group">
-                <a class="btn bg-yellow" style="margin-top:20px;" href="/grafik">
+                <a class="btn mt-1 med bg-yellow" href="/grafik">
                 <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
                 Back
                 </a>
             </div>
-            <br>
-            <form role="form" id="quickForm">
-                  <div class="form-group">
-                    <label for="judul">Judul : </label>
-                    <input type="text" class="form-control" id="judul" placeholder="Contoh : Penekanan Pelaksanaan Perkuliahan">
-                  </div>
-                  <div class="form-group">
-                    <label for="soal">Soal : </label>
-                    <select class="form-control" name="soal" id="soal">
-                      <option value="">(f2) Menurut Anda Seberapa besar penekanan perkuliahan dilaksanakan di program studi anda?</option>
-                      <option value="">(f2) Menurut Anda Seberapa besar penekanan perkuliahan dilaksanakan di program studi anda?</option>
-                      <option value="">(f2) Menurut Anda Seberapa besar penekanan perkuliahan dilaksanakan di program studi anda?</option>
-                      <option value="">(f2) Menurut Anda Seberapa besar penekanan perkuliahan dilaksanakan di program studi anda?</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="jenis-grafik">Jenis Grafik : </label>
-                    <select name="jns_grafik" id="jenis-grafik" class="form-control">
-                      <option value="">Pie</option>
+            <fieldset class="fieldset-border">
+              <legend class="legend-border">Silahkan menambah grafik pada form dibawah ini.</legend>
+              <form role="form" id="quickForm">
+                <div class="form-group">
+                  <label for="judul">Judul : </label>
+                  <input type="text" class="form-control" id="judul" placeholder="Contoh : Penekanan Pelaksanaan Perkuliahan">
+                </div>
+                <div class="form-group">
+                  <label for="soal">Soal : </label>
+                  <select class="form-control" name="soal" id="soal">
+                    <option value="">(f2) Menurut Anda Seberapa besar penekanan perkuliahan dilaksanakan di program studi anda?</option>
+                    <option value="">(f2) Menurut Anda Seberapa besar penekanan perkuliahan dilaksanakan di program studi anda?</option>
+                    <option value="">(f2) Menurut Anda Seberapa besar penekanan perkuliahan dilaksanakan di program studi anda?</option>
+                    <option value="">(f2) Menurut Anda Seberapa besar penekanan perkuliahan dilaksanakan di program studi anda?</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="jenis-grafik">Jenis Grafik : </label>
+                  <select name="jns_grafik" id="jenis-grafik" class="form-control">
+                    <option value="">Pie</option>
                       <option value="">Batang</option>
                       <option value="">Bar</option>
                     </select>
@@ -82,15 +83,15 @@
                       <option value="">2016</option>
                     </select>
                   </div>
-                  <div style="margin-top: 40px;" class="form-group">
-                    <button type="submit" class="btn btn-success">
-                        <i style="margin-right:5px;" class="fas fa-save"></i>
-                        Simpan
+                  <div class="form-group">
+                    <button type="submit" class="btn med mt-1 btn-success">
+                      <i style="margin-right:5px;" class="fas fa-save"></i>
+                      Simpan
                     </button>
                   </div>
-              </form>
-          </div>  
-                       
+                </form>
+              </fieldset>
+              </div>
             </div>
         <!-- /.card -->
       </div>

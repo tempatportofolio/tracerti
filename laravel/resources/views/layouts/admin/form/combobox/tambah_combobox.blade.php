@@ -36,27 +36,40 @@
                     </h1>
                 </div>
                 <div class="card-body">
+                  <div class="form-group">
+                    <a class="btn med bg-yellow" href="/data-combobox">
+                      <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
+                      Back
+                    </a>
+                  </div>
+                  <fieldset class="fieldset-border">
+                    <legend class="legend-border">Silahkan menambah data combobox pada form dibawah ini.</legend>
                     <form action="" method="" role="form" id="quickForm">
-                        <div class="card-body">
-                            <div class="form-group">
-                              <a class="btn bg-yellow" href="/data-combobox">
-                              <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
-                                Back
-                              </a>
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Nama Combobox</label>
-                                <input type="text" name="nama_combobox" class="form-control" id="exampleInputEmail1" placeholder="Contoh : Program Studi">
-                            </div>
-                            <div style="margin-top: 30px;" class="form-group float-right">
-                                <button type="submit" class="btn btn-success">
-                                    <i style="margin-right:5px;" class="fas fa-save"></i>
-                                    Simpan
-                                </button>
-                            </div>
-                        </div>    
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Nama Combobox :</label>
+                          <input type="text" name="nama_combobox" class="form-control" id="exampleInputEmail1" placeholder="Contoh : Program Studi">
+                        </div>
+                        <div class="mt-1 form-group float-right">
+                          <button type="submit" class="btn med btn-success">
+                            <i style="margin-right:5px;" class="fas fa-save"></i>
+                            Simpan
+                          </button>
+                        </div> 
                     </form>
+                  </fieldset>
+
+                  <hr>
+
+                  <div class="card catatan bg-success">
+                      <h3>
+                          <i class="fas fa-info-circle"></i>
+                          Catatan :
+                      </h3>
+                      <ul>
+                        <li>Data Combobox merupakan data-data yang ditampilkan dalam soal dalam bentuk combobox</li>
+                        <li>Data combobox harus ditambahkan sebelum membuat soal</li>
+                      </ul>
+                  </div>
                 </div>
             </div>
         </div>
