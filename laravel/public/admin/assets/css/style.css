@@ -1,249 +1,260 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-:root{
-	--roboto: 'Roboto', sans-serif;
-	--poppin: 'Poppins', sans-serif;
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --poppin: 'Poppins', sans-serif;
 }
 
-.content-header h1{
-	font-weight: 600;
+.content-header h1 {
+    font-weight: 600;
 }
 
 .content-header {
-	padding-top: 1rem;
+    padding-top: 1rem;
 }
 
-.btn-sm{
-	font-size: 0.8rem;
+.btn-sm {
+    font-size: 0.8rem;
 }
 
 
 .breadcrumb {
-	margin-top: .4rem;
-	font-size: .8rem;
+    margin-top: .4rem;
+    font-size: .8rem;
 }
 
 label {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.greet > h1,h2{
-	color: #fff;
+.greet>h1,
+h2 {
+    color: #fff;
 }
 
 .greet h1 {
-	font-size: 25px;
-	font-weight: 900;
+    font-size: 25px;
+    font-weight: 900;
 }
 
 .greet h2 {
-	font-weight: 700;
-	margin-top: 15px;
-	font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    font-size: 20px;
 }
 
 
 
 .greet {
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	letter-spacing: 2px;
-	margin-top: 120px;
-	margin-bottom: -100px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 120px;
+    margin-bottom: -100px;
 }
 
 body.bg-mybody {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	color:#666;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #666;
 }
 
 body.bg-mybody {
-	background: url(../image/bg3.png) repeat-y;
-	background-size: 100%;
-	height: 100%;
-	overflow-y: hidden;
+    background: url(../image/bg3.png) repeat-y;
+    background-size: 100%;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 #login_box {
-	margin-top: -100px;
-	background-color: #28a745;
-	padding: 48px;
-	border-radius: 5px;
-	width: 400px;
-	margin: 150px auto;
-	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.30);
-	text-align: center;
+    margin-top: -100px;
+    background-color: #28a745;
+    padding: 48px;
+    border-radius: 5px;
+    width: 400px;
+    margin: 150px auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.30);
+    text-align: center;
 }
 
-#login_box h1{
-	font-weight: 600;
-	color: #034f23;
-	font-size: 16px;
+#login_box h1 {
+    font-weight: 600;
+    color: #034f23;
+    font-size: 16px;
 }
 
 .login_form {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
-.login_form p + p {
-	margin-top: 20px;
+.login_form p+p {
+    margin-top: 20px;
 }
 
 #login_box .input.email,
 #login_box .input.password,
 #login_box .input.submit {
-	font-size: 100%;
-	font-family: inherit;
-	padding: 10px 1rem;
-	display: block;
-	width: 100%;
-	border: 1px solid #065427;
-	border-radius: 6px;
-	transition: border .22s ease, box-shadow .22s ease;
+    font-size: 100%;
+    font-family: inherit;
+    padding: 10px 1rem;
+    display: block;
+    width: 100%;
+    border: 1px solid #065427;
+    border-radius: 6px;
+    transition: border .22s ease, box-shadow .22s ease;
 }
 
 #login_box .input:focus,
-#login_box .input:active
-{
-	border-color: #0DAC50;
+#login_box .input:active {
+    border-color: #0DAC50;
 }
 
 #login_box .input.submit {
-	cursor: pointer;
-	background: #065427;
-	color: #fff;
-	font-weight: 500;
-	height: 50px;
+    cursor: pointer;
+    background: #065427;
+    color: #fff;
+    font-weight: 500;
+    height: 50px;
 }
 
-#login_box .input.submit:hover{
-	box-shadow: 0 5px 15px #065427;
+#login_box .input.submit:hover {
+    box-shadow: 0 5px 15px #065427;
 }
 
-.active-1{
-	background-color: #102b2b;
-	border-left: 4px solid green;
+.active-1 {
+    background-color: #102b2b;
+    border-left: 4px solid green;
 }
 
 
 
 
-.fieldset-border{
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: .8rem 1.4rem !important;
+.fieldset-border {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: .8rem 1.4rem !important;
 }
 
-fieldset legend{
-	font-size: 11px;
-	color: #ccc;
+fieldset legend {
+    font-size: 12px;
+    color: #c2c2c2;
 }
 
 .legend-border {
-	text-align: left !important;
-	width: auto;
-	padding: 0 10px;
-	border-bottom: none;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
 }
 
 .home {
-	border-left: 6px solid #034f23;
+    border-left: 6px solid #034f23;
 }
 
 .med {
-	font-size: .9rem;
+    font-size: .9rem;
 }
 
 body {
-	font-family: var(--poppin);
-	font-size: 0.9rem;
+    font-family: var(--poppin);
+    font-size: 0.9rem;
 }
 
-p,span,input {
-	font-size: 0.8rem;
+p,
+span,
+input {
+    font-size: 0.8rem;
 }
 
-.catatan{
-	margin-top: 2rem;
-	padding: 1rem 1.5rem;
-	background-color:#277a4a !important;
+.catatan {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: #277a4a !important;
 }
 
 .catatan ul {
-	padding-left: 3rem;
+    padding-left: 3rem;
 }
 
 .catatan li {
-	font-size: 12px;
+    font-size: 12px;
 }
 
 .catatan h3 {
-	font-weight: 500;
-	font-size: 14px;
-	margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-span.brand-text{
-	font-size: 1rem;
+span.brand-text {
+    font-size: 1rem;
 }
 
 .nav-link {
-	font-size: .8rem;
+    font-size: .8rem;
 }
 
 .content {
-	margin-top: -.5rem;
+    margin-top: -.5rem;
 }
+
+.dataTables_filter input {
+    outline: none;
+}
+
+.dataTables_filter input:hover {
+    border: 1px solid #0DAC50 !important;
+}
+
 
 /* Responsive */
 
 @media only screen and (max-width:1440px) {
-	body.bg-mybody{
-		background-image: url(../image/bg3.png);
-		background-repeat: repeat-y;
-	}
+    body.bg-mybody {
+        background-image: url(../image/bg3.png);
+        background-repeat: repeat-y;
+    }
 }
 
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 375px) {
 
-	.greet h1 {
-		font-size: 15px;
-		font-weight: 900;
-	}
-	
-	.greet h2 {
-		font-weight: 700;
-		margin-top: 15px;
-		font-size: 13px;
-	}
-	
-	.bg-mybody{
-		background-attachment: fixed;
-	}
+    .greet h1 {
+        font-size: 15px;
+        font-weight: 900;
+    }
 
-	#login_box {
-		background-color: #28a745;
-		padding: 20px;
-		border-radius: 5px;
-		width: 250px;
-		margin: 150px auto;
-		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.30);
-		text-align: center;
-	}
+    .greet h2 {
+        font-weight: 700;
+        margin-top: 15px;
+        font-size: 13px;
+    }
 
-	.greet {
-		font-family: 'Roboto', sans-serif;
-		text-align: center;
-		font-size: 12px;
-		margin-bottom: -100px;
-	}
+    .bg-mybody {
+        background-attachment: fixed;
+    }
+
+    #login_box {
+        background-color: #28a745;
+        padding: 20px;
+        border-radius: 5px;
+        width: 250px;
+        margin: 150px auto;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.30);
+        text-align: center;
+    }
+
+    .greet {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: -100px;
+    }
 }

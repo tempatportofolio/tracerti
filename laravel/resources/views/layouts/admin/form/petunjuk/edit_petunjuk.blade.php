@@ -1,55 +1,55 @@
 @extends('layouts.master')
 
 @section('title')
-    Edit Petunjuk | Tracer Study
+Edit Petunjuk | Tracer Study
 @endsection
 
 @section('content')
-      <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Edit Petunjuk</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
-              <li class="breadcrumb-item"><a href="/petunjuk">Petunjuk</a></li>
-              <li class="breadcrumb-item active">Edit Petunjuk</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Edit Petunjuk</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/petunjuk">Petunjuk</a></li>
+                        <li class="breadcrumb-item active">Edit Petunjuk</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
-        <div class="card card-outline card-success">
-            <div class="card-header">
-                <h3 class="card-title">
-                    <i class="fas fa-edit"></i>
-                    Form Edit Petunjuk
-                </h3>
-            </div>
-            <div class="card-body">
-            <div class="form-group">
-                <a class="btn med bg-yellow" href="/petunjuk">
-                <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
-                  Back
-                </a>
-            </div>
-            <fieldset class="fieldset-border">
-              <legend class="legend-border">Silahkan mengubah petunjuk pada form di bawah ini</legend>
-              <div class="row">
-                <div class="col-sm-12">
-                       <form action="" method="get">
-                         <div class="form-group">
-                           <label for="">Petunjuk :</label>
-                           <textarea class="form-control" name="petunjuk" id="" cols="50" rows="50">
+        <div class="container-fluid">
+            <div class="card card-outline card-success">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="fas fa-edit"></i>
+                        Form Edit Petunjuk
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <a class="btn med bg-yellow" href="/petunjuk">
+                            <i class="fas fa-arrow-left" style="margin-right:4px;"></i>
+                            Back
+                        </a>
+                    </div>
+                    <fieldset class="fieldset-border">
+                        <legend class="legend-border">Silahkan mengubah petunjuk pada form di bawah ini</legend>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form action="" method="get">
+                                    <div class="form-group">
+                                        <label for="">Petunjuk :</label>
+                                        <textarea class="form-control" name="petunjuk" id="" cols="50" rows="50">
                              <!-- Hanya Contoh -->
                              {{-- <h1>* Hanya Contoh</h1> --}}
                              
@@ -81,35 +81,35 @@
                                     
                                     <p>&nbsp;</p>
                                   </textarea>
-                                </div>
-                                <div class="form-group">
-                                  <button type="submit" class="btn med mt-1 btn-md btn-success float-right">
-                                    <i style="margin-right: 5px;" class="fas fa-save"></i>
-                                    Simpan Perubahan
-                                  </button>
-                                </div>
-                              </form> 
-                    </div>
-                  </div>
-                </fieldset>
-                <hr>
-
-                        <div class="card catatan bg-success">
-                            <h3>
-                                <i class="fas fa-info-circle"></i>
-                                Catatan :
-                            </h3>
-                            <ul>
-                              <li>Petunjuk hanya bisa diedit dan tidak bisa ditambah dan dihapus</li>
-                              <li>Petunjuk akan tampil di halaman user sebelum mengisi data tracer study</li>
-                            </ul>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn med mt-1 btn-md btn-success float-right">
+                                            <i style="margin-right: 5px;" class="fas fa-save"></i>
+                                            Simpan Perubahan
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                </div>                 
+                    </fieldset>
+                    <hr>
+
+                    <div class="card catatan bg-success">
+                        <h3>
+                            <i class="fas fa-info-circle"></i>
+                            Catatan :
+                        </h3>
+                        <ul>
+                            <li>Petunjuk hanya bisa diedit dan tidak bisa ditambah dan dihapus</li>
+                            <li>Petunjuk akan tampil di halaman user sebelum mengisi data tracer study</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card -->
         </div>
-        <!-- /.card -->
-      </div>
     </section>
-  </div>
+</div>
 
 @endsection
 
@@ -117,5 +117,6 @@
 <script src="{{asset('admin/assets/ckeditor/ckeditor.js')}}"></script>
 <script>
     CKEDITOR.replace('petunjuk');
+
 </script>
 @endsection

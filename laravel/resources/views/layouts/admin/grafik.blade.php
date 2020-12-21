@@ -1,27 +1,27 @@
 @extends('layouts.master')
 
 @section('title')
-    Grafik | Tracer Study
+Grafik | Tracer Study
 @endsection
 
 @section('content')
-     <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Grafik</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
-              <li class="breadcrumb-item active">Grafik</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Grafik</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+                        <li class="breadcrumb-item active">Grafik</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
     </section>
 
     <!-- Main content -->
@@ -30,7 +30,7 @@
             <div class="card card-outline card-success">
                 <div class="card-header">
                     <h1 class="card-title">
-                        <i class="nav-icon fas fa-chart-pie"></i>   
+                        <i class="nav-icon fas fa-chart-pie"></i>
                         Daftar Grafik
                     </h1>
                 </div>
@@ -61,16 +61,17 @@
                         <br>
                         <div class="row">
                             <div class="col-sm-12">
-                                    <a href="/tambah-grafik" class="btn med btn-success float-right">
+                                <a href="/tambah-grafik" class="btn med btn-success float-right">
                                     <i class="fas fa-plus"></i>
-                                        Tambah Grafik
-                                    </a>
+                                    Tambah Grafik
+                                </a>
                             </div>
                         </div>
                         <br>
                         <div class="row">
                             <div class="col-sm-12">
-                                <table class="table table-bordered table-striped dataTable table-hover" role="grid" aria-describedby="example1_info">
+                                <table class="table table-bordered table-striped dataTable table-hover" role="grid"
+                                    aria-describedby="example1_info">
                                     <thead>
                                         <tr style="text-align:center;">
                                             <th>No.</th>
@@ -86,17 +87,18 @@
                                         <tr style="text-align:center;">
                                             <td>1</td>
                                             <td style="text-align:left;">Penekanan Pelaksanaan Perkuliahan</td>
-                                            <td style="text-align:left;">(f2) Menurut Anda seberapa besar penekanan perkuliahan di laksanakan di program studi Anda?</td>
+                                            <td style="text-align:left;">(f2) Menurut Anda seberapa besar penekanan
+                                                perkuliahan di laksanakan di program studi Anda?</td>
                                             <td>Batang</td>
                                             <td>Nilai</td>
                                             <td>2016</td>
                                             <td style="text-align: center;vertical-align: middle;">
                                                 <a href="/detail-grafik" class="btn btn-sm btn-success">
-                                                <i class="fas fa-info-circle"></i>
+                                                    <i class="fas fa-info-circle"></i>
                                                     Detail
                                                 </a>
                                                 <a href="/delete-grafik" class="btn btn-sm btn-danger">
-                                                <i class="far fa-trash-alt"></i>
+                                                    <i class="far fa-trash-alt"></i>
                                                     Hapus
                                                 </a>
                                             </td>
@@ -104,25 +106,23 @@
                                         <tr style="text-align:center;">
                                             <td>2</td>
                                             <td style="text-align:left;">Penekanan Pelaksanaan Perkuliahan</td>
-                                            <td style="text-align:left;">(f2) Menurut Anda seberapa besar penekanan perkuliahan di laksanakan di program studi Anda?</td>
+                                            <td style="text-align:left;">(f2) Menurut Anda seberapa besar penekanan
+                                                perkuliahan di laksanakan di program studi Anda?</td>
                                             <td>Batang</td>
                                             <td>Nilai</td>
                                             <td>2016</td>
                                             <td style="text-align: center;vertical-align: middle;">
                                                 <a href="/detail-grafik" class="btn btn-sm btn-success">
-                                                <i class="fas fa-info-circle"></i>
+                                                    <i class="fas fa-info-circle"></i>
                                                     Detail
                                                 </a>
                                                 <a href="/delete-grafik" class="btn btn-sm btn-danger">
-                                                <i class="far fa-trash-alt"></i>
+                                                    <i class="far fa-trash-alt"></i>
                                                     Hapus
                                                 </a>
                                             </td>
                                         </tr>
                                     </tbody>
-                                    <tfoot>
-                                        
-                                    </tfoot>
                                 </table>
                             </div>
                         </div>
@@ -135,26 +135,23 @@
                                 </ul>
                             </div>
                         </div>
-
                         <hr>
-
                         <div class="card catatan bg-success">
                             <h3>
                                 <i class="fas fa-info-circle"></i>
                                 Catatan :
                             </h3>
                             <ul>
-                              <li>Grafik berisi kumpulan grafik tracer study</li>
-                              <li>Untuk melihat grafik klik icon detail</li>
+                                <li>Grafik berisi kumpulan grafik tracer study</li>
+                                <li>Untuk melihat grafik klik icon detail</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper --> 
+</div>
+<!-- /.content-wrapper -->
 @endsection

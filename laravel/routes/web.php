@@ -108,6 +108,32 @@ Route::get('/export-data-tracer', function () {
 /* End */
 
 
+/* Pengumuman */
+Route::get('/pengumuman', function () {
+    return view('layouts.admin.pengumuman');
+});
+Route::get('/tambah-pengumuman', function () {
+    return view('layouts.admin.form.pengumuman.tambah_pengumuman');
+});
+Route::get('/edit-pengumuman', function () {
+    return view('layouts.admin.form.pengumuman.edit_pengumuman');
+});
+/* End */
+
+
+/* Berita */
+Route::get('/berita', function () {
+    return view('layouts.admin.berita');
+});
+Route::get('/tambah-berita', function () {
+    return view('layouts.admin.form.berita.tambah_berita');
+});
+Route::get('/edit-berita', function () {
+    return view('layouts.admin.form.berita.edit_berita');
+});
+/* End */
+
+
 
 /* Grafik */
 Route::get('/grafik', function () {
