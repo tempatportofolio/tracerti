@@ -1,0 +1,455 @@
+/*------------------- GOOGLE FONTS -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/*------------------- CSS VARIABLE -------------------*/
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --dark-blue: #0D3B66;
+    --blue: #285385;
+    --grey: #F2F2F2;
+    --black : #001424;
+    --small-title : #A19F9F;
+}
+
+
+/*------------------- UNIVERSAL CSS -------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+body {
+    font-family: var(--poppins);
+    font-size: 1rem;
+    color: #000;
+    background: #e9ecef;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+}
+
+.sm-container {
+    width: 70%;
+    margin: 0 auto;
+    background: var(--grey);
+    padding: 1rem 2.5rem;
+    box-shadow: 0 0 10px 5px var(--grey);
+    min-height: 821px;
+}
+
+
+/*------------------- HEADER -------------------*/
+section.header {
+    background: var(--dark-blue);
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+section.header .navbar {
+    height: 50px;
+    width: 100%;
+}
+
+section.header .navbar ul {
+    float: right;
+}
+
+section.header .navbar .logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 2px;
+    padding-left: 0 100px;
+}
+
+section.header .navbar ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+section.header .navbar li a {
+    font-size: .9rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+section.header .navbar li a:hover {
+    color: #529BD9;
+    transition: .3s ease-in;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    line-height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+
+#check {
+    display: none;
+}
+
+
+/*------------------- PENGUMUMAN -------------------*/
+
+section.pengumuman {
+    color: #000;
+}
+
+section.pengumuman h1{
+    margin-top: 50px;
+    font-size: 42px;
+    color: #000;
+    font-weight: 700;
+}
+
+section.pengumuman p {
+    color: #000;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+section.pengumuman small {
+    padding: 2rem 0 1rem 0;
+    display: block;
+    color: var(--small-title);
+}
+
+section.pengumuman a{
+    color: #529BD9;
+    font-style: italic;
+}
+
+/*------------------- BERITA -------------------*/
+section.berita h1{
+    margin-top: 50px;
+    font-size: 42px;
+    color: #000;
+    font-weight: 700;
+}
+
+section.berita p {
+    color: #000;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+section.berita small {
+    padding: 2rem 0 1rem 0;
+    display: block;
+    color: var(--small-title);
+}
+
+section.berita a {
+    font-size: 18px;
+    color: #0077b6;
+    font-weight: bold;
+    font-family: var(--poppins);
+    font-style: italic;
+}
+
+section.berita a:hover {
+    color: #529BD9;
+    transition: .2s ease-in;
+}
+
+section.berita img {
+    display: block;
+    width: 50%;
+    text-align: center !important;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+section.berita img:hover {
+    opacity: .7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+
+}
+
+.modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: .6s;
+    animation-name: zoom;
+    animation-duration: .6s;
+}
+
+@-webkit-keyframes zoom {
+    from{-webkit-transform: scale(0);}
+    to{-webkit-transform: scale(1);}
+}
+
+@keyframes zoom {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*------------------- FOOTER -------------------*/
+
+section.footer {
+    height: 60px;
+    width: 100%;
+    background-color: var(--black);
+}
+
+section.footer p {
+    text-align: center;
+    line-height:60px;
+}
+
+section.footer p a {
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+section.footer p a:hover {
+    color: #529BD9;
+    transition: color .5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------- RESPONSIVE -------------------*/
+
+@media (max-width:1024px) {
+    .checkbtn {
+        display: block;
+    }
+
+    section.header .navbar ul {
+        position: fixed;
+        width: 100%;
+        height: 45vh;
+        background: #2c3e50;
+        top: 95px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    section.header .navbar ul li {
+        display: block;
+        margin: 32px 0;
+        line-height: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+@media (max-width:925px) {
+    section.header .navbar .logo {
+        font-size: 20px;
+        width: 10px;
+    }
+
+    section.header .navbar ul li {
+        font-size: .5rem;
+    }
+}
+
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    section.header .navbar ul {
+        position: fixed;
+        width: 100%;
+        height: 90vh;
+        background: #2c3e50;
+        top: 105px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    section.header .navbar ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    section.header .navbar ul li a {
+        font-size: 16px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    section.header .navbar ul {
+        top: 95px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    section.header .navbar {
+        height: 110px;
+        width: 100%;
+    }
+
+    section.header .navbar .logo {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    section.header .navbar ul {
+        background: #2c3e50;
+        top: 145px;
+    }
+
+    .checkbtn {
+        line-height: 60px;
+        margin-left: 30px;
+    }
+
+    section.pengumuman h1{
+        margin-top: 30px;
+        font-size: 24px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    section.pengumuman p {
+        font-size: 14px;
+    }
+
+    section.footer p a {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    section.header .navbar {
+        height: 110px;
+        width: 100%;
+    }
+
+    section.header .navbar .logo {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    section.header .navbar ul {
+        background: #2c3e50;
+        top: 145px;
+    }
+
+    .checkbtn {
+        line-height: 45px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    section.header .navbar {
+        height: 120px;
+        width: 100%;
+    }
+
+    section.header .navbar .logo {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    section.header .navbar ul {
+        background: #2c3e50;
+        top: 145px;
+    }
+
+    .checkbtn {
+        line-height: 45px;
+    }
+}
