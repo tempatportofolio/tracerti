@@ -9,8 +9,9 @@
     --dark-blue: #0D3B66;
     --blue: #285385;
     --grey: #F2F2F2;
-    --black : #001424;
-    --small-title : #A19F9F;
+    --black: #001424;
+    --small-title: #A19F9F;
+    --grey-background: #A5A5A7;
 }
 
 
@@ -53,6 +54,9 @@ body {
 }
 
 
+
+
+
 /*------------------- HEADER -------------------*/
 section.header {
     background: var(--dark-blue);
@@ -73,7 +77,7 @@ section.header .navbar .logo {
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 50px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-left: 0 100px;
 }
 
@@ -115,7 +119,7 @@ section.pengumuman {
     color: #000;
 }
 
-section.pengumuman h1{
+section.pengumuman h1 {
     margin-top: 50px;
     font-size: 42px;
     color: #000;
@@ -136,13 +140,13 @@ section.pengumuman small {
     color: var(--small-title);
 }
 
-section.pengumuman a{
+section.pengumuman a {
     color: #529BD9;
     font-style: italic;
 }
 
 /*------------------- BERITA -------------------*/
-section.berita h1{
+section.berita h1 {
     margin-top: 50px;
     font-size: 42px;
     color: #000;
@@ -155,6 +159,7 @@ section.berita p {
     text-align: justify;
     font-weight: 400;
     line-height: 26px;
+    padding-bottom: 2rem;
 }
 
 section.berita small {
@@ -199,15 +204,14 @@ section.berita img:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
     margin: auto;
     display: block;
     width: 100%;
-
 }
 
 .modal-content {
@@ -218,13 +222,23 @@ section.berita img:hover {
 }
 
 @-webkit-keyframes zoom {
-    from{-webkit-transform: scale(0);}
-    to{-webkit-transform: scale(1);}
+    from {
+        -webkit-transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+    }
 }
 
 @keyframes zoom {
-    from{transform: scale(0);}
-    to{transform: scale(1);}
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 .close {
@@ -237,7 +251,8 @@ section.berita img:hover {
     transition: .3s;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
@@ -248,6 +263,113 @@ section.berita img:hover {
         width: 100%;
     }
 }
+
+
+/*------------------- IDENTITAS ALUMNI -------------------*/
+section.identitas h1 {
+    padding-top: 1.8rem;
+    font-size: 2.4rem;
+}
+
+section.identitas .sm-container {
+    width: 50%;
+    background-color: #fff;
+}
+
+section.identitas h3 {
+    font-size: .9rem;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+section.identitas hr {
+    margin: 1rem 0;
+    height: 3px;
+    width: 65%;
+    border: 0;
+    background-color: var(--black);
+}
+
+section.identitas .form-control {
+    padding: 1rem 0;
+}
+
+section.identitas .form-control input,
+section.identitas select {
+    width: 85%;
+    outline: none;
+    border: 2px solid #A5A5A7;
+    height: 2rem;
+    border-radius: 3px;
+    padding: 1rem .8rem;
+    background-color: #fff;
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+}
+
+section.identitas select {
+    padding: 0 .8rem;
+    height: 2.3rem;
+}
+
+section.identitas .form-control input:focus,
+section.identitas .form-control input:hover,
+section.identitas select:focus,
+section.identitas select:hover {
+    border: 2px solid #0D3B66;
+    transition: .7s ease;
+}
+
+
+section.identitas .form-control label {
+    font-size: 1rem;
+    padding: .4rem 0;
+    display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+section.identitas small {
+    display: block;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+section.identitas small span {
+    color: red;
+    font-size: 16px;
+}
+
+section.identitas button {
+    padding: .6rem 2.5rem;
+    margin: 0 0 4rem 0;
+    border-radius: 2px;
+    background-color: var(--dark-blue);
+    border: none;
+    color: #fff;
+    font-family: var(--poppins);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    outline: none;
+    cursor: pointer;
+}
+
+section.identitas button:hover {
+    background-color: var(--black);
+    transition: .3s ease-in;
+}
+
 
 
 
@@ -267,7 +389,7 @@ section.footer {
 
 section.footer p {
     text-align: center;
-    line-height:60px;
+    line-height: 60px;
 }
 
 section.footer p a {
@@ -281,6 +403,203 @@ section.footer p a:hover {
     transition: color .5s ease-in-out;
 }
 
+/*------------------- LOGIN -------------------*/
+body.login {
+    background-color: #0D3B66;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login-container {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 70vh;
+    -moz-transform: translateX(-50%) translateY(50%);
+    -webkit-transform: translateX(-50%) translateY(50%);
+    transform: translateX(-50%) translateY(50%);
+    transform: translate(-50%, 20%);
+    background-color: #F4F4F9;
+    border-radius: 10px;
+    -moz-box-shadow: 3px 3px 5px 6px #000;
+    -webkit-box-shadow: 3px 3px 5px 6px #000;
+    box-shadow: 8px 8px 14px #141414;
+    overflow: hidden;
+
+}
+
+.login-container .grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0;
+    height: 100%;
+}
+
+.login-container .col-1 {
+    background-color: #F4F4F9;
+    padding: 1rem 4.2rem;
+    height: 100%;
+    text-align: center;
+}
+
+.login-container .col-1 h1 {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.login-container .col-1 h3{
+    font-size: .8rem;
+    overflow: hidden;
+    color: var(--grey-background);
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.login-container .col-1 h3::before,
+.login-container .col-1 h3::after {
+    content: '';
+    background-color: var(--grey-background);
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.login-container .col-1 h3::before {
+    right: .5em;
+    margin-left: -50%;
+}
+
+.login-container .col-1 form {
+    text-align: left;
+}
+
+.login-container .col-1 .form-control {
+    padding: .4rem 0 .8rem 0;
+}
+
+.form-control label {
+    display: block;
+    padding-bottom: .4rem;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.form-control input[type=email],
+.form-control input[type=password],
+.form-control input[type="text"] {
+    width: 100%;
+    padding: .6rem .8rem;
+    background-color: #ededed;
+    font-family: var(--poppins);
+    border-radius: 4px;
+    border: 2px solid var(--grey-background);
+    font-weight: 600;
+}
+
+.btn-login {
+    background-color: #0D3B66;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 2px;
+    margin: 1rem 0;
+}
+
+.btn-login:hover {
+    background-color: var(--blue);
+    transition: .3s ease-in;
+}
+
+.form-control input:focus {
+    outline: none;
+}
+
+.form-control input[type=email]:focus,
+.form-control input[type=password]:focus,
+.form-control input[type=text]:focus {
+    background-color: #fff;
+    border: 2px solid var(--dark-blue);
+    transition: .3s ease-out;
+}
+
+
+
+.login-container .col-1 h3::after {
+    left: .5em;
+    margin-right: -50%;
+}
+
+.login-container .col-1 p {
+    font-size: 14px;
+    padding: 1rem 0;
+}
+
+.login-container .col-1 p a {
+    color: #529BD9;
+    font-weight: 600;
+}
+
+.login-container .col-1 p a:hover {
+    color: var(--dark-blue);
+    transition: .4s ease-out;
+}
+
+.login-container .col-2 {
+    padding: 1rem 2.5rem;
+    background-color: #529BD9;
+    height: 100%;
+    color: #fff;
+    position: relative;
+}
+
+.login-container hr{
+    background-color: var(--grey-background);
+    height: 1px;
+    margin: .2rem 0 1rem 0;
+    border: none;
+}
+
+.login-container .col-2 h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+
+.login-container .col-2 h3 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.login-container .col-2 p {
+    padding: 2.5rem 0;
+    font-family: var(--poppins);
+    font-weight: 300;
+    font-size: 16px;
+    margin-right: 140px;
+}
+
+.login-container .col-2 .ilustration {
+    width: 68%;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.login-container .regist h1 {
+    padding: 2rem 0 .8rem 0;
+}
 
 
 
@@ -294,6 +613,92 @@ section.footer p a:hover {
 
 
 /*------------------- RESPONSIVE -------------------*/
+
+@media (max-width:1440px) {
+    .login-container .col-1 h1 {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+
+    .login-container .col-2 h1 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .login-container .col-2 p {
+        padding: 2.5rem 0;
+        font-family: var(--poppins);
+        font-weight: 300;
+        font-size: .9rem;
+        margin-right: 140px;
+    }
+}    
+
+@media (max-height:900px) {
+    .login-container .col-1 h1 {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        text-transform: uppercase;
+        margin-top: 2.5rem;
+    }
+
+    .login-container .col-2 h1 {
+        font-size: 2.5rem;
+        margin-top: 2.4rem;
+    }
+
+    .login-container .col-2 p {
+        padding: 2.5rem 0;
+        font-family: var(--poppins);
+        font-weight: 300;
+        font-size: .9rem;
+        margin-right: 80px;
+    }
+
+    .login-container .col-2 .ilustration {
+        width: 75%;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+    }
+}    
+
+
+@media (max-height:802px) {
+    .login-container .col-1 h1 {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        text-transform: uppercase;
+        margin-top: 1.2rem;
+    }
+
+    .login-container .col-2 h1 {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .login-container .col-2 h3 {
+        font-size: 1rem;
+    }
+
+    .login-container .col-2 p {
+        padding: 2.5rem 0;
+        font-family: var(--poppins);
+        font-weight: 300;
+        font-size: .8rem;
+        margin-right: 60px;
+    }
+
+    .login-container .col-2 .ilustration {
+        width: 75%;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+    }
+}
+
 
 @media (max-width:1024px) {
     .checkbtn {
@@ -319,6 +724,77 @@ section.footer p a:hover {
 
     #check:checked~ul {
         left: 0;
+    }
+
+    .login-container .col-1 {
+        padding: 1rem 2rem;
+    }
+
+    
+    .login-container .col-1 h1 {
+        font-size: 1.5rem;
+        padding: .5rem 0;
+    }
+
+    .login-container .col-2 h1 {
+        font-size: 1.6rem;
+        margin-top: 1.2rem;
+    }
+
+    .login-container .col-2 h3 {
+        font-size: .9rem;
+    }
+
+    .login-container .col-2 p {
+        padding: 2rem 0;
+        font-size: .7rem;
+        margin-right: 60px;
+    }
+
+    .login-container .col-2 .ilustration {
+        width: 70%;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .login-container .col-1 h3{
+        font-size: .6rem;
+        padding: 1rem 0;
+    }
+    
+    .login-container .col-1 .form-control {
+        padding: .4rem 0 .2rem 0;
+    }
+    
+    .form-control label {
+        padding-bottom: .4rem;
+        font-size: .7rem;
+    }
+    
+    .form-control input[type=email],
+    .form-control input[type=password] {
+        padding: .4rem .8rem;
+        font-size: .6rem;
+    }
+    
+    .btn-login {
+        font-size: .8rem;
+        letter-spacing: 0px;
+        padding: .6rem 2rem;
+        margin: .8rem 0;
+    }
+
+    .login-container hr {
+        margin: 1rem 0;
+    }
+    
+    .login-container .col-1 p {
+        font-size: .7rem;
+        padding: 1rem 0;
+    }
+
+    section.identitas .sm-container {
+        width: 80%;
     }
 }
 
@@ -366,9 +842,98 @@ section.footer p a:hover {
     }
 }
 
+@media (max-height: 768px) {
+    .login-container .col-1 {
+        padding: 1rem 2rem;
+    }
+
+    
+    .login-container .col-1 h1 {
+        font-size: 1.5rem;
+        padding: .5rem 0;
+    }
+
+    .login-container .col-2 h1 {
+        font-size: 1.6rem;
+        margin-top: 1.2rem;
+    }
+
+    .login-container .col-2 h3 {
+        font-size: .9rem;
+    }
+
+    .login-container .col-2 p {
+        padding: 2rem 0;
+        font-size: .7rem;
+        margin-right: 60px;
+    }
+
+    .login-container .col-2 .ilustration {
+        width: 60%;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .login-container .col-1 h3{
+        font-size: .6rem;
+        padding: 1rem 0;
+    }
+    
+    .login-container .col-1 .form-control {
+        padding: .4rem 0 .2rem 0;
+    }
+    
+    .form-control label {
+        padding-bottom: .4rem;
+        font-size: .7rem;
+    }
+    
+    .form-control input[type=email],
+    .form-control input[type=password] {
+        padding: .4rem .8rem;
+        font-size: .6rem;
+    }
+    
+    .btn-login {
+        font-size: .8rem;
+        letter-spacing: 0px;
+        padding: .6rem 2rem;
+        margin: .8rem 0;
+    }
+
+    .login-container hr {
+        margin: 1rem 0;
+    }
+    
+    .login-container .col-1 p {
+        font-size: .7rem;
+        padding: 1rem 0;
+    }
+}
+
 @media (max-width: 768px) {
     section.header .navbar ul {
         top: 95px;
+    }
+
+    section.identitas .sm-container, 
+    section.berita .sm-container, 
+    section.pengumuman .sm-container
+    {
+        width: 90%;
+    }
+
+    section.berita .sm-container, 
+    section.pengumuman .sm-container {
+        padding: .5rem 1rem;
+    }
+
+    section.identitas hr {
+        width: 100%;
+    }
+
+    section.berita img {
+        width: 100%;
     }
 }
 
@@ -394,7 +959,7 @@ section.footer p a:hover {
         margin-left: 30px;
     }
 
-    section.pengumuman h1{
+    section.pengumuman h1 {
         margin-top: 30px;
         font-size: 24px;
         color: #000;
@@ -405,8 +970,47 @@ section.footer p a:hover {
         font-size: 14px;
     }
 
+    section.berita h1 {
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: 700;
+        overflow: hidden;
+    }
+
+    section.berita .sm-container {
+        width: 100%;
+    }
+
+    section.berita p {
+        font-size: 14px;
+    }
+
     section.footer p a {
         font-size: 12px;
+    }
+
+    section.identitas .form-control input,
+    section.identitas .form-control select,
+    section.identitas .form-control option {
+        width: 100%;
+    }
+
+    section.identitas .sm-container {
+        padding: 0 1.5rem;
+    }
+
+    section.identitas h1 {
+        font-size: 1.8rem;
+    }
+
+    section.identitas h3 {
+        font-size: .8rem;
+        line-height: normal;
+        padding: 1rem 0 0 0;
+    }
+
+    section.identitas hr {
+        width: 100%;
     }
 }
 
@@ -430,6 +1034,12 @@ section.footer p a:hover {
     .checkbtn {
         line-height: 45px;
         margin-left: 10px;
+    }
+
+    section.berita .sm-container,
+    section.pengumuman .sm-container {
+        padding: .5rem 1rem;
+        margin: 0;
     }
 }
 

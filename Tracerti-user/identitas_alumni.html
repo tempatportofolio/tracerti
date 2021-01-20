@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Identitas Alumni | Tracer Study Teknologi Informasi</title>
+</head>
+
+<body>
+
+    <!-------------------------------- HEADER START -------------------------------->
+
+    <section class="header">
+        <div class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a class="logo" href="index.html">TRACER STUDY TEKNOLOGI INFORMASI</a>
+            <ul class="">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="data_alumni.html">Data Alumni</a>
+                </li>
+                <li>
+                    <a href="petunjuk.html">Petunjuk</a>
+                </li>
+                <li>
+                    <a href="profil.html">Profile</a>
+                </li>
+                <li>
+                    <a href="#">Keluar</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-------------------------------- HEADER END -------------------------------->
+    
+    
+    <!-------------------------------- SECTION IDENTITAS START -------------------------------->
+
+    <section class="identitas">
+        <div class="sm-container">
+            <div class="content">
+                <h1>IDENTITAS ALUMNI</h1>
+                <h3>Isi form di bawah ini dengan benar untuk melengkapi data diri alumni</h3>
+
+                <hr>
+    
+                <form action="">
+                    <div class="form-control">
+                        <label for="kode_ps">Kode Program Studi</label>
+                        <select name="kode_ps" id="">
+                            <option value="">--Pilih Program Studi--</option>
+                            <option value="">Teknologi Informasi dan Komputer</option>
+                            <option value="">Sistem Informasi</option>
+                            <option value="">Business Digital dan E-Commerce</option>
+                            <option value="">Film dan Televisi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="nim">NIM</label>
+                        <input type="number" name="nim" placeholder="NIM" id="">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="nama">Nama Mahasiswa</label>
+                        <input type="text" name="nama" placeholder="Nama Mahasiswa" id="">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="no_hp">No. Telp/HP</label>
+                        <input type="number" placeholder="No. Telp/HP" name="no_hp" id="">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email" id="">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="thn_lls">Tahun Lulus</label>
+                        <input type="number" maxlength="4" name="thn_lls" placeholder="Contoh : 2014" id="">
+                        <small><span>&#42;</span> Isilah dengan ANGKA saja, tanpa tanda Titik atau Koma</small>
+                    </div>
+
+                    <div class="form-control">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------- SECTION IDENTITAS END -------------------------------->
+
+
+
+    <!-------------------------------- FOOTER START -------------------------------->
+
+    <section class="footer">
+        <p>
+            <a href="https://vokasi.ub.ac.id/">Pendidikan Vokasi Universitas Brawijaya</a>
+        </p>
+    </section>
+
+    <!-------------------------------- FOOTER END -------------------------------->
+
+
+</body>
+
+</html>

@@ -1,14 +1,14 @@
-var modal=document.getElementById("modalMy");
+var modal = document.getElementById("modalMy");
 
 var img = document.getElementById("img");
-var modalImg=document.getElementById("imgMy");
+var modalImg = document.getElementById("imgMy");
 
-img.onclick=function() {
-    modal.style.display="block";
-    modalImg.src=this.src;
+img.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
 }
 
-var span=document.getElementsByClassName("close")[0];
-span.onclick=function() {
-    modal.style.display="none"
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+    modal.style.display = "none"
 }
