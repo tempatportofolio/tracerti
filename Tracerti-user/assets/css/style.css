@@ -1080,6 +1080,9 @@ body.login {
         width: 20%;
     }
     
+    .arrow {
+        display: none;
+    }
 
     section.header .navbar ul {
         position: fixed;
@@ -1181,6 +1184,30 @@ body.login {
     section.soal .main .form-control .radio input[type=number],
     section.soal .main .form-control .radio input[type=text] {
         width: 80%;
+    }
+
+    section.banner .grid .col-1 h1 {
+        line-height: normal;
+        font-size: 1.5rem;
+    }
+
+    section.banner .grid .col-1 h3 {
+        font-size: .9rem;
+    }
+
+    section.banner .grid .col-1 h1,
+    section.banner .grid .col-1 h3,
+    section.banner .grid .col-1 a.kuisioner-btn {
+        margin-left: 5%;
+    }
+
+    section.info .info-container .info-items {
+        width: 220px !important;
+        height: 250px !important;
+    }
+
+    section.info .info-container .info-items .title h1 {
+        font-size: .9rem;
     }
 }
 
@@ -1468,4 +1495,229 @@ body.login {
     .checkbtn {
         line-height: 45px;
     }
+}
+
+
+/* HOME */
+section.banner {
+    background-color: var(--blue);
+    height: 60vh;
+    padding: 2rem 0;
+}
+
+section.banner .grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+section.banner .col-1 h1 {
+    font-size: 2.5rem;
+    padding: 4rem 0 1.5rem 0;
+    color: #fff;
+    line-height: 60px;
+    text-align: justify;
+    margin-left: 12%;
+}
+
+section.banner .col-1 a.kuisioner-btn {
+    background-color: var(--black);
+    font-size: 1.1rem;
+    display: block;
+    width: 230px;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 1.5rem 0 1.5rem 12%;
+}
+
+section.banner .col-1 h3 {
+    margin-left: 12%;
+    font-weight: 500;
+    color: #00DFE3;
+    padding-bottom: 4rem;
+}
+
+section.banner .col-1 h3 a:hover{
+    color: #73ffcc;
+    transition: 1s ease;
+}
+section.banner .col-1 h3 a{
+    color: #D9AF2F;
+    text-transform: lowercase;
+}
+
+section.banner .col-1 a.kuisioner-btn:hover {
+    background-color: #15435E;
+    transition: .6s ease;
+}
+
+section.banner .col-2 .ilustration {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    height: 100%;
+}
+
+section.info {
+    padding: 1rem 0;
+    position: relative;
+    text-align: center;
+}
+
+section.info > h3 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    padding: 1rem 0;
+}
+
+section.info h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+section.info .info-container .info-items small {
+    text-align: right;
+    font-size: 12px;
+    display: block;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+section.info .info-container .info-items {
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/info.png);
+    background-repeat: no-repeat;
+    height: 320px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 1rem;
+    background-position: center;
+    background-size: 70%;
+}
+
+section.info .info-container .info-items .color-overlay {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    padding: 1.5rem;
+    border-radius: 6px;
+    opacity: .4;
+    position: absolute;
+}
+
+section.info .info-items h1 {
+    letter-spacing: normal;
+    text-align: left;
+}
+
+section.info .info-items div.title{
+    z-index: 1;
+    bottom: 0;
+    padding: 1rem 1.5rem;
+    position: absolute;
+}
+
+section.info .info-items div.title h1 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    font-family: var(--poppins);
+    text-align: left;;
+}
+
+.arrow {
+    position: absolute;
+    top: 48%;
+    transform: translateY(48%);
+    cursor: pointer;
+}
+
+.arrow i {
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    padding: .5rem;
+    color: #fff;
+    font-size: 18px;
+}
+
+.arrow-right {
+    right: 13%;
+    transform: translateX(-13%);
+}
+
+.arrow-left {
+    left: 13%;
+    transform: translateX(13%);
+}
+
+.info-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 5rem 0;
+}
+
+section.info .info-container .info-items .color-overlay:hover {
+    opacity: .3;
+}
+
+section.petunjuk {
+    position: relative;
+    margin: 2rem auto;
+}
+
+section.petunjuk .sm-container {
+    padding: 0;
+    border-top: 4px solid #001424;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: none;
+    min-height: 70vh;
+}
+
+section.petunjuk .header-petunjuk {
+    padding: .8rem 0;
+}
+
+section.petunjuk .header-petunjuk i {
+    font-size: 1.5rem;
+    padding: 0 .1rem 0 1rem;
+    color: #001424;
+    font-weight: 700;
+}
+
+section.petunjuk .header-petunjuk span {
+    font-size: 1.5 rem !important;
+    font-weight: 600;
+}
+
+section.petunjuk hr {
+    border: none;
+    background-color: #e9ecef;
+    height: 2px;
+}
+
+section.petunjuk .body-petunjuk {
+    padding: 2rem 4rem;
+}
+
+section.petunjuk .body-petunjuk h1 {
+    padding: 1rem 0 2rem 0;
+}
+
+section.petunjuk .body-petunjuk h3 {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+}
+
+section.petunjuk .body-petunjuk p {
+    font-size: 14px;
 }
