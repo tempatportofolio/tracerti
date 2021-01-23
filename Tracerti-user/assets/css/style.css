@@ -1072,6 +1072,19 @@ body.login {
         display: block;
     }
 
+    section.profile .profil-grid .col-1 img {
+        margin: 1.5rem auto 1rem !important;
+    }
+
+    section.profile .profil-grid .col-1 .sosmed {
+        padding: 1.5rem .8rem .6rem !important;
+        text-align: left;
+    }
+
+    section.profile .profil-grid .col-2 {
+        width: 90% !important;
+    }
+
     section.data-alumni .sm-container {
         width: 100%;
     }
@@ -1208,6 +1221,16 @@ body.login {
 
     section.info .info-container .info-items .title h1 {
         font-size: .9rem;
+    }
+
+    section.profile {
+        width: 100% !important;
+        padding: 0 2rem;
+    }
+
+    section.profile .profil-grid {
+        grid-template-columns: 30% 70% !important;
+        gap: 2em !important;
     }
 }
 
@@ -1720,4 +1743,150 @@ section.petunjuk .body-petunjuk h3 {
 
 section.petunjuk .body-petunjuk p {
     font-size: 14px;
+}
+
+
+section.profile {
+    width: 70%;
+    margin: 0 auto;
+}
+
+section.profile h1 {
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+}
+
+section.profile .profil-grid {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 3em;
+}
+
+section.profile .profil-grid .col-1,
+section.profile .profil-grid .col-2{
+    border-radius: 14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top: 6px solid #285385;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+    background: #fff;
+}
+
+section.profile .profil-grid .col-1 {
+    text-align: center;
+    padding: 0;
+    height: 540px;
+}
+section.profile .profil-grid .col-2 {
+    height: 400px;
+    width: 80%;
+}
+
+section.profile .profil-grid .col-1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 3rem auto 1rem;
+}
+
+section.profile .profil-grid .col-1 h2 {
+    font-size: 16px;
+}
+
+section.profile .profil-grid .col-1 .sosmed {
+    padding: 1.5rem 1.2rem .6rem;
+    margin: 0 1rem;
+    width: auto;
+    text-align: left;
+}
+
+section.profile .profil-grid .col-1 .sosmed div a {
+    color: #000;
+    font-size: .8rem;
+    font-family: var(--poppins);
+    font-weight: 500;
+}
+
+section.profile .profil-grid .col-1 .sosmed i {
+    color: #001424;
+    font-size: 1rem;
+    padding: .6rem .6rem .4rem 0;
+}
+
+.sosmed div span {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.sosmed hr {
+    border: none;
+    background-color: #A19F9F;
+    height: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.edit-btn {
+    background-color: #0D3B66;
+    padding: .6rem 0;
+    display: block;
+    margin: 1rem 32px 0 32px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+section.profile .profil-grid .col-2 .header-profil {
+    padding: .6rem 1rem;
+}
+
+section.profile .profil-grid .col-2 .header-profil span {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 .2rem;
+}
+
+section.profile .profil-grid .col-2 hr {
+    border: none;
+    height: 2px;
+    background-color: #e9ecef;
+}
+
+section.profile .profil-grid .col-2 .body-profil {
+    padding: 2rem 1rem;
+    margin: auto;
+}
+
+section.profile .profil-grid .col-2 .body-profil .info label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section.profile .profil-grid .col-2 .body-profil .info {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: .3rem 0;
+}
+
+section.profile .profil-grid .col-2 .body-profil .info span {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+
+.edit-btn i {
+    padding: 0 .1rem;
+}
+
+
+
+body.bg-profile {
+    background: #EEF2F7;
 }
